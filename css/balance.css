@@ -1,0 +1,311 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-4)
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    padding-top: var(--space-layout-padding-top);
+    padding-bottom: var(--space-layout-padding-bottom);
+    background-color: var(--color-4);
+    height: 230px;
+    position: relative; /* Importante para que el círculo se posicione correctamente */
+    /* overflow: hidden; */
+    
+}
+.header__circulo-grande{
+    width: 600px;
+    height: 600px;
+    background-image: url(../storage/image/background-texture.svg);
+    background-image: cover;
+    background-size: 520px;
+    border-radius: 50%; /* Hace que el elemento tenga forma de círculo */
+    position: absolute; /* Posicionamiento absoluto me permite que el contenido de .header__logo-menu pueda superponerse al círculo.*/
+    top:-388px;
+    left:-98px
+
+}
+
+.header__logo-menu {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-layout-margin-bottom);
+    position: relative; /* Establezco posición relativa para que el z-index funcione */
+    z-index: 1; /* Coloco el contenido por encima del círculo */
+
+    
+}
+
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) */
+.logo-menu__logo {
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+/* Estilos para la imagen del logotipo */
+.logo-menu__logo img{
+    width: 18px;
+    height: 18px;
+}
+
+/* Estilos para el nombre de la virtual wallet que acompaña a logotipo de la compañia */
+.logo-menu__logo small{
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+    color: var(--color-4);
+    letter-spacing: 2px
+}
+
+
+.logo-menu__menu {
+
+}
+
+
+/*Estilo para las tres barras del menú que se encuentran el parte superior derecha*/
+.logo-menu__menu img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.header__circulo-pequeño {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 180px; 
+    height: 180px; 
+    background-color: var( --color-2);
+    border-radius: 50%; /* Para que el div tenga forma de círculo */
+    position: absolute;
+    top: 80px; /* Lo ajusté verticalmente */
+    left: 50%; /* Lo posicioné horizontalmente*/
+    transform: translateX(-50%); /* Para centrar horizontalmente el círculo pequeño */
+    z-index: 2; /* Para que esté sobre el círculo grande */
+    color: var(--color-4)
+
+}
+
+.circulo-pequeño__titulo h2{
+    font-family: "Roboto-Bold";
+    text-align: center;
+}
+
+
+.circulo-pequeño__dinero{
+    display: flex;
+    align-items: end;
+    gap:2px;
+}
+
+.circulo-pequeño__dinero p{
+    font-family: "Roboto-Bold";
+    font-size: 23px;
+}
+
+.circulo-pequeño__dinero span{
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+}
+
+
+
+
+
+
+/*
+------------------------------
+ESTILOS PARA EL APARTADO MAIN
+------------------------------
+*/
+
+.main {
+
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    padding-bottom: 10px;
+   
+
+}
+
+
+.financial-management{
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+}
+
+.main__finacial-management {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.main__finacial-management p{
+    font-family: "Roboto-Light";
+    padding: 4px 20px;
+    border-radius: 18px;
+}
+.main__finacial-management p:first-child{
+    border: solid;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 7px 20px
+}
+
+.main__finacial-management p:nth-child(2){
+    border: solid;
+    border-color: var(--color-2);
+    color: var(--color-2)
+}
+
+.main__finacial-management p:last-child{
+    border: solid;
+    border-color: var(--color-3);
+    color: var(--color-3)
+}
+
+.main__finacial-management-image {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    /* background-color: burlywood; */
+}
+
+.main__finacial-management-image img{
+    width: 420px
+}
+
+
+
+
+.main__spending {
+    margin-top: 10px;
+    background-color: var(--pig-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 30px;
+    height:110px
+}
+.spending__exit {
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.spending__exit img{
+    position: absolute;
+    right: 10px;
+    width:30px;
+}
+
+.spending__content{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+
+}
+.spending__card {
+    position: relative;
+    top: 5px;
+    left:20px;
+
+}
+
+.spending__card img{
+    width:80px;
+
+}
+.spending__text {
+    position: relative;
+    width: 200px;
+    top: 5px;
+    left: 20px;
+}
+
+.spending__text h3{
+    font-family: "Roboto-Bold";
+    color:var(--color-1);
+    
+}
+
+.spending__text small{
+    font-family: "Roboto-Light";
+    font-size: 11.5px;
+    color:var(--color-1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL FOOTER
+---------------------------------------------
+*/
+
+
+
+.footer {
+    background-color: var(--color-1);
+    display: flex;
+    height: 9.5%;
+    width: 100%;
+    bottom: 0;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    position:absolute;
+
+}
+.footer__navigation-icons {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer__navigation-icons li img{
+    /* background-color: blue; */
+    height: 25px
+}
+
+
+
