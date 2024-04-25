@@ -1,0 +1,50 @@
+:root{
+    --color-1: #082247;
+    --color-2: #03a7cc;
+    --color-3: #5d90b9;
+    --color-4: #FFFFFF;
+    --color-background-color-hover: #cfe4fa;
+
+
+    --pig-color: #e1f5ff;
+    --color-5-credit-card-even: #ADB3B9;
+>>>>>>> 34b143d (feat: :lipstick: Customize colors)
+    --color-shadow: #4e58643f;
+
+    --space-layout-padding-left:20px;
+    --space-layout-padding-right: 20px;
+    --space-layout-padding-top: 30px;
+    --space-layout-padding-bottom: 30px;
+
+    --space-layout-margin-bottom: 20px;
+
+
+
+    --margin-activities-content-types: 10px 0 10px 10px; /* top, right, bottom, left */
+    --padding-top-activities-content-types: 30px;
+
+
+
+}
+
+
+@font-face {
+    font-family: "Roboto-Bold"; /*SF-Pro-Text-Bold*/ /*SF-Pro-Text-Medium*/
+    src: url("/storage/font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Black"; /*SF-Pro-Text-Heavy*/ 
+    src: url(/storage/font/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light"; /*SF-Pro-Text-Light*/
+    src: url(/storage/font/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(/storage/font/Roboto/Roboto-Medium.ttf);
+}
+
