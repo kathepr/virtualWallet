@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "SF-Pro-Text-Bold";
-    src: url("../storage/font/SF-Pro-Text/SF-Pro-Text-Bold.otf");
+    src: url("/storage/font/SF-Pro-Text/SF-Pro-Text-Bold.otf");
 }
 
 @font-face {
@@ -20,20 +20,20 @@
 
 @font-face {
     font-family: "SF-Pro-Text-Medium";
-    src: url("../storage/font/SF-Pro-Text/SF-Pro-Text-Medium.otf");
+    src: url("/storage/font/SF-Pro-Text/SF-Pro-Text-Medium.otf");
 }
 
 @font-face {
     font-family: "SF-Pro-Text-Light";
-    src: url("../storage/font/SF-Pro-Text/SF-Pro-Text-Light.otf");
+    src: url("/storage/font/SF-Pro-Text/SF-Pro-Text-Light.otf");
 }
 
 @font-face {
     font-family: "Roboto-Bold";
-    src: url("../storage/font/Roboto/Roboto-Bold.ttf");
+    src: url("/storage/font/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
     font-family: "Roboto-Medium";
-    src: url("../storage/font/Roboto/Roboto-Medium.ttf");
+    src: url("/storage/font/Roboto/Roboto-Medium.ttf");
 }
