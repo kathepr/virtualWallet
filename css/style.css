@@ -1,0 +1,480 @@
+@import url(variables.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+------------------------------
+ESTILOS PARA EL APARTADO HEADER
+------------------------------
+*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../storage/image/background-texture.svg);
+}
+
+a {
+    color: var(--color-1);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    padding-top: var(--space-layout-padding-top);
+    padding-bottom: var(--space-layout-padding-bottom);
+    color: var(--color-4);
+
+}
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) + las tres barras del menú */
+
+.header__logo-menu {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-layout-margin-bottom)
+}
+
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) */
+.logo-menu__logo {
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+/* Estilos para la imagen del logotipo */
+.logo-menu__logo img{
+    width: 18px;
+    height: 18px;
+}
+
+/* Estilos para el nombre de la virtual wallet que acompaña a logotipo de la compañia */
+.logo-menu__logo small{
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+    color: var(--color-4);
+    letter-spacing: 2px
+}
+
+
+.logo-menu__menu {
+}
+
+/*Estilo para las tres barras del menú que se encuentran el parte superior derecha*/
+.logo-menu__menu img{
+    width: 18px;
+    height: 18px;
+}
+
+/* Estilos para el mensaje de bienvenida */
+.header__welcome-message {
+    /* background-color: blueviolet; */
+    margin-bottom: 15px;
+
+}
+
+/* Estilos para el título del mensaje de bienvenida: Saludo al usuario */
+.header__welcome-message h1{
+    font-family: "Roboto-Black";
+    font-size: 30px;
+}
+
+/* Estilos para el texto del mensaje de bienvenida */
+.header__welcome-message p{
+    font-family: "Roboto-Light";
+    font-size: 30px;
+}
+
+/* Estilos para el contenedor del portafolio financiero: las cajas de savings y assets */
+
+.header__financialPortafolio {
+    /* background-color: rgb(255, 81, 0); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.financialPortafolio__savings {
+
+}
+
+/* Estilos para el texto de información financiera: SAVINGS */
+.financialPortafolio__savings small{
+    font-family: "Roboto-Medium";
+    font-size: 11px;
+}
+
+/*Estilos para la cantidad de dinero que acompaña la información financiera de savings:*/
+.financialPortafolio__savings p{
+    font-family: "Roboto-Bold";
+    font-size: 22px;
+}
+
+/*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de savings*/
+.financialPortafolio__savings p span{
+    font-family: "Roboto-Medium";
+    font-size: 13px
+}
+
+/* Estilos para las imagen de información financiera de SAVINGS*/
+.financialPortafolio__savings img{
+    width: 150px
+}
+
+
+.financialPortafolio__assets {
+}
+
+/* Estilos para el texto de información financiera: ASSETS */
+.financialPortafolio__assets small{
+    font-family: "Roboto-Medium";
+    font-size: 11px;
+}
+
+/*Estilos para la cantidad de dinero que acompaña la información financiera de assets:*/
+.financialPortafolio__assets p{
+    font-family: "Roboto-Bold";
+    font-size: 22px;
+}
+
+/*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de assets*/
+.financialPortafolio__assets p span{
+    font-family: "Roboto-Medium";
+    font-size: 13px;
+}
+
+/* Estilos para la imagen de información financiera de ASSETS*/
+.financialPortafolio__assets img{
+    width: 150px
+}
+
+
+
+
+
+/*
+------------------------------
+ESTILOS PARA EL APARTADO MAIN
+------------------------------
+*/
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--color-4);
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    padding-top: var(--space-layout-padding-top);
+    border-radius: 40px 40px 0 0;
+    overflow-y: auto; /* Se agrega desplazamiento vertical */
+    max-height: calc(100vh - 10%); /* Se ajusta la altura máxima para que se ajuste a la ventana del navegador menos el footer */
+
+}
+
+
+/*
+-------------------------------------------
+ESTILOS PARA EL APARTADO MAIN - ACTIVITIES
+-------------------------------------------
+*/
+
+
+.main__activities {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    color: var(--color-1)
+
+
+}
+
+.activities__title {
+    /* background-color: rgb(240, 240, 154); */
+}
+
+.activities__title h3{
+    font-family: "Roboto-Bold";
+}
+
+.activities__types {
+    /* background-color: rgb(213, 168, 255); */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.activities__content-types{
+    display: flex;
+    gap: 15px;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.types__account {
+    /* background-color: rgb(255, 149, 28); */
+    margin: var(--margin-activities-content-types);
+    min-width: 100px;
+    height:140px;
+    padding-top: var(--padding-top-activities-content-types);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
+    
+    
+}
+
+.types__account:hover{
+    background-color: var(--color-background-color-hover);
+    transition: 0.3s;
+}
+
+
+.account__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    
+
+}
+
+
+.account__link img{
+    width:50px;
+    height: 50px;
+
+}
+
+.account__link p{
+    font-family: "Roboto-Medium";
+    font-size: 15px;
+}
+
+
+
+.types__privacy {
+    /* background-color: rgb(130, 240, 128); */
+    margin: var(--margin-activities-content-types);
+    min-width: 100px;
+    height:140px;
+    padding-top: var(--padding-top-activities-content-types);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
+    
+}
+
+.types__privacy:hover{
+    background-color: var(--color-background-color-hover);
+    transition: 0.3s;
+}
+
+.privacy__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 8px;
+}
+
+
+.privacy__link img{
+    width:50px;
+    height: 50px;
+
+}
+
+.privacy__link p{
+    font-family: "Roboto-Medium";
+    font-size: 15px;
+}
+
+.types__help {
+    /* background-color: rgb(255, 28, 126); */
+    margin: 10px;
+    min-width: 100px;
+    height:140px;
+    padding-top: var(--padding-top-activities-content-types);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
+}
+
+.types__help:hover{
+    background-color: var(--color-background-color-hover);
+    transition: 0.3s;
+}
+
+
+.help__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.help__link img{
+    width:40px;
+    height: 40px;
+}
+
+.help__link p{
+    padding-top: 10px;
+    font-family: "Roboto-Medium";
+    font-size: 15px;
+}
+
+
+
+
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
+---------------------------------------------
+*/
+
+
+
+.main__transactions {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--color-1)
+
+    
+}
+.transactions__title {
+    /* background-color: bisque; */
+
+}
+
+.transactions__title h3{
+    font-family: "Roboto-Bold";
+  
+}
+
+
+.all__transactions {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding-bottom: 90px;
+
+}
+.box__transaction-types {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto; /* Desbordamiento vertical */
+    max-height: 450px; /* Altura máxima para que se pueda mostrar la barra de desplazamiento */
+}
+    
+
+.transaction-types {
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.transaction-types__description {
+    /* background-color: rgb(152, 231, 156); */
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.description__image img{
+    /* background-color: burlywood; */
+    width: 35px;
+    height: 35px;;
+
+}
+.description__info {
+
+
+}
+
+.description__info h4{
+    font-family: "Roboto-Bold";
+}
+
+.description__info small{
+    font-family: "Roboto-Light";
+    font-size: 11px;
+    
+}
+
+
+.transaction-types__price-date {
+    /* background-color: greenyellow; */
+    text-align: end;
+}
+
+.transaction-types__price-date h4{
+    font-family: "Roboto-Bold";
+
+}
+
+.transaction-types__price-date small{
+    font-family: "Roboto-Light";
+    font-size: 11px;
+
+}
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL FOOTER
+---------------------------------------------
+*/
+
+
+
+.footer {
+    background-color: var(--color-1);
+    display: flex;
+    height: 9.5%;
+    width: 100%;
+    bottom: 0;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    position: fixed; /* Posición fija */
+    bottom: 0; /* Lo fijo en la parte inferior */
+}
+
+.footer__navigation-icons {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer__navigation-icons li img{
+    /* background-color: blue; */
+    height: 25px
+}
+
+
+
