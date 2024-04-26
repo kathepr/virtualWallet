@@ -11,11 +11,14 @@ ESTILOS PARA EL APARTADO HEADER
 ------------------------------
 */
 
+body{
+    background-color: var(--color-1);
+    background-image: url(/storage/image/background-texture.svg);
+}
+
 .header {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
-    background-image: url(/storage/image/background-texture.svg);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
@@ -158,24 +161,40 @@ ESTILOS PARA EL APARTADO MAIN
 */
 
 
+
 .main {
-    background-color: rgb(0, 136, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-4);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
-
-
+    border-radius: 40px 40px 0 0; /* Radios de borde para las esquinas superiores */
+    /* position: absolute;
+    height: 490px;
+    bottom: 0 */
 }
+
+
+/*
+-------------------------------------------
+ESTILOS PARA EL APARTADO MAIN - ACTIVITIES
+-------------------------------------------
+*/
+
+
 .main__activities {
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    color: var(--color-1)
+
 
 }
 
 .activities__title {
-    background-color: rgb(240, 240, 154);
+    /* background-color: rgb(240, 240, 154); */
 }
 
 .activities__title h3{
@@ -183,14 +202,14 @@ ESTILOS PARA EL APARTADO MAIN
 }
 
 .activities__types {
-    background-color: rgb(213, 168, 255);
+    /* background-color: rgb(213, 168, 255); */
     display: flex;
     flex-direction: row;
     width: 100%;
 
 }
 
-.content__types{
+.activities__content-types{
     display: flex;
     gap: 15px;
     width: 100vw;
@@ -198,11 +217,16 @@ ESTILOS PARA EL APARTADO MAIN
 }
 
 .types__account {
-    background-color: rgb(255, 149, 28);
+    /* background-color: rgb(255, 149, 28); */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     min-width: 100px;
     height:140px;
     padding-top: 30px;
     border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
+    
 
     
 }
@@ -211,7 +235,9 @@ ESTILOS PARA EL APARTADO MAIN
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    gap: 6px;
+    gap: 8px;
+    
+
 }
 
 
@@ -229,11 +255,15 @@ ESTILOS PARA EL APARTADO MAIN
 
 
 .types__privacy {
-    background-color: rgb(130, 240, 128);
+    /* background-color: rgb(130, 240, 128); */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     min-width: 100px;
     height:140px;
     padding-top: 30px;
     border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
 }
 
 
@@ -259,11 +289,13 @@ ESTILOS PARA EL APARTADO MAIN
 }
 
 .types__help {
-    background-color: rgb(255, 28, 126);
+    /* background-color: rgb(255, 28, 126); */
+    margin: 10px;
     min-width: 100px;
     height:140px;
     padding-top: 30px;
     border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
 }
 
 
@@ -284,4 +316,98 @@ ESTILOS PARA EL APARTADO MAIN
 .help__link p{
     font-family: "Roboto-Medium";
     font-size: 15px;
+}
+
+
+
+
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
+---------------------------------------------
+*/
+
+
+
+.main__transactions {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-1)
+
+    
+}
+.transactions__title {
+    background-color: bisque;
+
+}
+
+.transactions__title h3{
+    font-family: "Roboto-Bold";
+  
+}
+
+
+.all__transactions {
+
+    
+}
+.box__transaction-types {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.transaction-types {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.transaction-types__description {
+    background-color: rgb(152, 231, 156);
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.description__image img{
+    background-color: burlywood;
+    width: 35px;
+    height: 35px;;
+
+}
+.description__info {
+
+
+}
+
+.description__info h4{
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.description__info small{
+    font-family: "SF-Pro-Text-Light";
+    font-size: 11px;
+    
+}
+
+
+.transaction-types__price-date {
+    background-color: greenyellow;
+    text-align: end;
+}
+
+.transaction-types__price-date h4{
+    font-family: "SF-Pro-Text-Bold";
+
+}
+
+.transaction-types__price-date small{
+    font-family: "SF-Pro-Text-Light";
+    font-size: 11px;
+
 }
