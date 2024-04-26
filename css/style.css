@@ -185,15 +185,25 @@ ESTILOS PARA EL APARTADO MAIN
 .activities__types {
     background-color: rgb(213, 168, 255);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
 
 }
+
+.content__types{
+    display: flex;
+    gap: 15px;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
 .types__account {
     background-color: rgb(255, 149, 28);
-    width: 108.9px;
+    min-width: 108.9px;
     height:150px;
     padding-top: 30px;
     border-radius: 20px;
+
     
 }
 .account__link {
@@ -209,7 +219,6 @@ ESTILOS PARA EL APARTADO MAIN
     width:38px;
     height: 50px;
 
-    
 }
 
 .account__link p{
@@ -221,7 +230,7 @@ ESTILOS PARA EL APARTADO MAIN
 
 .types__privacy {
     background-color: rgb(130, 240, 128);
-    width: 108.9px;
+    min-width: 108.9px;
     height:150px;
     padding-top: 30px;
     border-radius: 20px;
@@ -251,7 +260,7 @@ ESTILOS PARA EL APARTADO MAIN
 
 .types__help {
     background-color: rgb(255, 28, 126);
-    width: 108.9px;
+    min-width: 108.9px;
     height:150px;
     padding-top: 30px;
     border-radius: 20px;
