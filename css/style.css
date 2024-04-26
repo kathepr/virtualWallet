@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Estilos para el encabezado */
 .header {
     display: flex;
     flex-direction: column;
@@ -15,67 +16,71 @@
     padding-top: 30px;
     padding-bottom: 30px;
     color: var(--color-4);
-    
-    
-    
-
 
 }
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) + las tres barras del menú */
+
 .header__logo-menu {
     /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 35px;
-    
-
 }
 
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) */
 .logo-menu__logo {
     display: flex;
     align-items: center;
-    gap:8px
-
+    gap:10px
 }
 
+/* Estilos para la imagen del logotipo */
 .logo-menu__logo img{
-    width: 15px;
-    height: 15px;
-
+    width: 18px;
+    height: 18px;
 }
 
+/* Estilos para el nombre de la virtual wallet que acompaña a logotipo de la compañia */
 .logo-menu__logo small{
     font-family: "SF-Pro-Text-Bold";
-    font-size: 10px;
-    color: var(--color-4)
+    font-size: 12px;
+    color: var(--color-4);
+    letter-spacing: 2px
 }
 
 
 .logo-menu__menu {
 }
 
+/*Estilo para las tres barras del menú que se encuentran el parte superior derecha*/
 .logo-menu__menu img{
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
 }
 
-
+/* Estilos para el mensaje de bienvenida */
 .header__welcome-message {
     /* background-color: blueviolet; */
     margin-bottom: 15px;
 
 }
 
+/* Estilos para el título del mensaje de bienvenida: Saludo al usuario */
 .header__welcome-message h1{
     font-family: "SF-Pro-Text-Heavy";
     font-size: 30px;
 }
 
+/* Estilos para el texto del mensaje de bienvenida */
 .header__welcome-message p{
     font-family: "SF-Pro-Text-Light";
     font-size: 30px;
 }
 
+/* Estilos para el contenedor del portafolio financiero: las cajas de savings y assets */
 
 .header__financialPortafolio {
     /* background-color: rgb(255, 81, 0); */
@@ -87,19 +92,25 @@
 
 }
 
+/* Estilos para el texto de información financiera: SAVINGS */
 .financialPortafolio__savings small{
-    font-family: "SF-Pro-Text-Medium";
+    font-family: "SF-Pro-Text-Light";
+    font-size: 11px;
 }
 
+/*Estilos para la cantidad de dinero que acompaña la información financiera de savings:*/
 .financialPortafolio__savings p{
     font-family: "Roboto-Bold";
     font-size: 22px;
-
 }
+
+/*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de savings*/
 .financialPortafolio__savings p span{
-    font-size: 15px
+    font-family: "SF-Pro-Text-Light";
+    font-size: 13px
 }
 
+/* Estilos para las imagen de información financiera de SAVINGS*/
 .financialPortafolio__savings img{
     width: 150px
 }
@@ -108,17 +119,25 @@
 .financialPortafolio__assets {
 }
 
+/* Estilos para el texto de información financiera: ASSETS */
 .financialPortafolio__assets small{
-    font-family: "SF-Pro-Text-Medium";
+    font-family: "SF-Pro-Text-Light";
+    font-size: 11px;
 }
 
+/*Estilos para la cantidad de dinero que acompaña la información financiera de assets:*/
 .financialPortafolio__assets p{
     font-family: "Roboto-Bold";
     font-size: 22px;
 }
+
+/*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de assets*/
 .financialPortafolio__assets p span{
-    font-size: 15px
+    font-family: "SF-Pro-Text-Light";
+    font-size: 13px;
 }
+
+/* Estilos para la imagen de información financiera de ASSETS*/
 .financialPortafolio__assets img{
     width: 150px
 }
