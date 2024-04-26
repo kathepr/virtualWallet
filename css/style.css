@@ -199,8 +199,8 @@ ESTILOS PARA EL APARTADO MAIN
 
 .types__account {
     background-color: rgb(255, 149, 28);
-    min-width: 108.9px;
-    height:150px;
+    min-width: 100px;
+    height:140px;
     padding-top: 30px;
     border-radius: 20px;
 
@@ -230,8 +230,8 @@ ESTILOS PARA EL APARTADO MAIN
 
 .types__privacy {
     background-color: rgb(130, 240, 128);
-    min-width: 108.9px;
-    height:150px;
+    min-width: 100px;
+    height:140px;
     padding-top: 30px;
     border-radius: 20px;
 }
@@ -260,8 +260,8 @@ ESTILOS PARA EL APARTADO MAIN
 
 .types__help {
     background-color: rgb(255, 28, 126);
-    min-width: 108.9px;
-    height:150px;
+    min-width: 100px;
+    height:140px;
     padding-top: 30px;
     border-radius: 20px;
 }
