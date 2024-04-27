@@ -5,6 +5,15 @@
     --color-4: #FFFFFF;
     --color-shadow: #4e58643f;
 
+    --space-layout-padding-left:20px;
+    --space-layout-padding-right: 20px;
+    --space-layout-padding-top: 30px;
+    --space-layout-padding-bottom: 30px;
+
+
+    --margin-activities-content-types: 10px 0 10px 10px; /* top, right, bottom, left */
+    --padding-top-activities-content-types: 30px;
+
 
 
 }
