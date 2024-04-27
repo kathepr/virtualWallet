@@ -73,3 +73,10 @@ body{
     width: 18px;
     height: 18px;
 }
+
+.circle {
+    width: 100px; /* Define el ancho del círculo */
+    height: 100px; /* Define la altura del círculo */
+    background-color: #ff0000; /* Cambia el color de fondo del círculo según lo necesites */
+    border-radius: 50%; /* Establece el radio del borde para hacer el círculo */
+}
