@@ -39,7 +39,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35px;
+
 }
 
 
@@ -79,4 +79,88 @@ body{
     height: 100px; /* Define la altura del círculo */
     background-color: #ff0000; /* Cambia el color de fondo del círculo según lo necesites */
     border-radius: 50%; /* Establece el radio del borde para hacer el círculo */
+}
+
+
+
+
+.main {
+    /* background-color: pink; */
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    
+}
+.main__investing {
+    /* background-color: lightskyblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+.investing__title {
+    /* background-color: rgb(161, 103, 241); */
+    font-family: "SF-Pro-Text-Bold";
+}
+.investing__content {
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--color-shadow);
+    overflow: hidden;
+}
+.investing-content__images {
+    /* background-color: #ff0000; */
+    overflow: hidden;
+    padding-right: 20px;
+    
+    
+}
+
+
+.investing-content__images img{
+    height: 120px;
+    width: 130px;
+    transform: translateY(2px)
+
+}
+
+.investing-content__info {
+    /* background-color: yellow; */
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+
+.investing-content__info h4{
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-1);
+}
+
+.investing-content__info small{
+    font-family: "SF-Pro-Text-Light";
+    color: var(--color-1);
+    font-size:12px;
+}
+
+.investing-content__info a button{
+    background-color: var(--color-2);
+    border: none;
+    padding: 8px 20px;
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-4);
+    font-size: 9px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+
+.investing-content__close img{
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
