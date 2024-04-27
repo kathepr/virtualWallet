@@ -126,6 +126,7 @@ ESTILOS PARA EL APARTADO MAIN - INVESTING TIPS
 .investing__title {
     /* background-color: rgb(161, 103, 241); */
     font-family: "SF-Pro-Text-Bold";
+    color: var(--color-1);
 }
 
 .investing__content {
@@ -186,4 +187,118 @@ ESTILOS PARA EL APARTADO MAIN - INVESTING TIPS
     width: 25px;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+
+
+
+
+/*
+-----------------------------------------------
+ESTILOS PARA EL APARTADO MAIN - MY CARDS
+-----------------------------------------------
+*/
+
+.my-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+
+.my-cards h3{
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-1);
+}
+
+.main__cards {
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+    overflow-x: auto; /* Desbordamiento horizontal */
+    white-space: nowrap; /* Evita que las tarjetas se rompan en varias líneas */
+}
+
+.main__cards .cards:nth-child(even) {
+    background-color: var(--color-5-credit-card-even);
+    background-image: url(/storage/image/background-texture-creditCard-even.svg);
+
+}
+
+.cards {
+    flex-grow: 0; /* Para evitar que las tarjetas se expandan más allá de su contenido */
+    flex-shrink: 0; /* Para evitar que las tarjetas se reduzcan más allá de su contenido */
+   
+    background-color: var(--color-1);
+    background-image: url(/storage/image/background-texture-creditCard.svg);
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+
+    margin-right: 20px; /* Agregar un margen entre las tarjetas*/
+}
+
+
+
+.cards__info {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;  
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 20px;
+
+
+    
+}
+.info__card-number {
+    /* background-color: #ff0000; */
+    display: flex;
+    justify-content: space-between;  
+}
+
+.info__card-number img{
+    height: 30px;
+}
+
+.info__card-number p{
+    font-family: "SF-Pro-Text-Medium";
+    font-size: 12px;
+    color: var(--color-4);
+}
+
+
+.info__card-money {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    /* background-color: rgb(4, 80, 80);  */
+}
+
+.info__card-money p{
+    font-family: "SF-Pro-Text-Medium";
+    font-size: 25px;
+    color: var(--color-4);
+}
+
+
+.info__card-money span{
+
+    font-family: "SF-Pro-Text-Medium";
+    color: var(--color-4);
+    font-size: 18px;
+
+}
+
+.info__card-symbol {
+    /* background-color: darkgray; */
+    display: flex;
+}
+
+.info__card-symbol img{
+    width: 40px;
 }
