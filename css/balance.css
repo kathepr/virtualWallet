@@ -4,3 +4,122 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: var(--color-4)
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    padding-top: var(--space-layout-padding-top);
+    padding-bottom: var(--space-layout-padding-bottom);
+    background-color: var(--color-4);
+    height: 230px;
+    position: relative; /* Importante para que el círculo se posicione correctamente */
+    /* overflow: hidden; */
+    
+}
+.header__circulo-grande{
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-1);
+    background-image: url(/storage/image/balance-background-texture.svg);
+    background-size: cover;
+    border-radius: 50%; /* Hace que el elemento tenga forma de círculo */
+    position: absolute; /* Posicionamiento absoluto me permite que el contenido de .header__logo-menu pueda superponerse al círculo.*/
+    top:-270px;
+    left:-58px
+
+}
+
+.header__logo-menu {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-layout-margin-bottom);
+    position: relative; /* Establezco posición relativa para que el z-index funcione */
+    z-index: 1; /* Coloco el contenido por encima del círculo */
+
+    
+}
+
+
+/* Estilos para el contenedor del logotipo (imagen del logotipo y nombre de la virtual wallet) */
+.logo-menu__logo {
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+/* Estilos para la imagen del logotipo */
+.logo-menu__logo img{
+    width: 18px;
+    height: 18px;
+}
+
+/* Estilos para el nombre de la virtual wallet que acompaña a logotipo de la compañia */
+.logo-menu__logo small{
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 12px;
+    color: var(--color-4);
+    letter-spacing: 2px
+}
+
+
+.logo-menu__menu {
+
+}
+
+
+/*Estilo para las tres barras del menú que se encuentran el parte superior derecha*/
+.logo-menu__menu img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.header__circulo-pequeño {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 200px; 
+    height: 200px; 
+    background-color: var( --color-2);
+    border-radius: 50%; /* Para que el div tenga forma de círculo */
+    position: absolute;
+    top: 90px; /* Lo ajusta verticalmente */
+    left: 48%; /* Lo posiciona horizontalmente*/
+    transform: translateX(-50%); /* Para centrar  horizontalmente el círculo pequeño */
+    z-index: 2; /* Para que esté sobre el círculo grande */
+    color: var(--color-4)
+
+}
+
+.circulo-pequeño__titulo h2{
+    font-family: "SF-Pro-Text-Bold";
+    text-align: center;
+}
+
+
+.circulo-pequeño__dinero{
+    display: flex;
+    align-items: end;
+    gap:2px;
+}
+
+.circulo-pequeño__dinero p{
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 23px;
+}
+
+.circulo-pequeño__dinero span{
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 12px;
+}
