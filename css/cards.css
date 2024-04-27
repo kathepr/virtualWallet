@@ -50,6 +50,7 @@ ESTILOS PARA EL APARTADO HEADER
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: var(--space-layout-margin-bottom) */
 
 }
 
@@ -88,7 +89,6 @@ ESTILOS PARA EL APARTADO HEADER
 .circle {
     width: 100px; /* Define el ancho del círculo */
     height: 100px; /* Define la altura del círculo */
-    background-color: #ff0000; /* Cambia el color de fondo del círculo según lo necesites */
     border-radius: 50%; /* Establece el radio del borde para hacer el círculo */
 }
 
@@ -106,7 +106,7 @@ ESTILOS PARA EL APARTADO MAIN
 .main {
     /* background-color: pink; */
     padding-left: var(--space-layout-padding-left);
-    padding-right: var(--space-layout-padding-right);   
+    /* padding-right: var(--space-layout-padding-right);    */
 }
 
 
@@ -121,6 +121,7 @@ ESTILOS PARA EL APARTADO MAIN - INVESTING TIPS
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-right: var(--space-layout-padding-right); 
 }
 
 .investing__title {
@@ -203,7 +204,7 @@ ESTILOS PARA EL APARTADO MAIN - MY CARDS
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 35px;
 
 }
 
@@ -233,8 +234,8 @@ ESTILOS PARA EL APARTADO MAIN - MY CARDS
     background-color: var(--color-1);
     background-image: url(/storage/image/background-texture-creditCard.svg);
     background-size: cover;
-    width: 200px;
-    height: 300px;
+    width: 190px;
+    height: 285px;
     border-radius: 25px;
 
     margin-right: 20px; /* Agregar un margen entre las tarjetas*/
@@ -281,7 +282,7 @@ ESTILOS PARA EL APARTADO MAIN - MY CARDS
 
 .info__card-money p{
     font-family: "SF-Pro-Text-Medium";
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-4);
 }
 
@@ -302,3 +303,41 @@ ESTILOS PARA EL APARTADO MAIN - MY CARDS
 .info__card-symbol img{
     width: 40px;
 }
+
+
+
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL FOOTER
+---------------------------------------------
+*/
+
+
+
+.footer {
+    background-color: var(--color-1);
+    display: flex;
+    height: 9.5%;
+    width: 100%;
+    bottom: 0;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    position:absolute;
+
+}
+.footer__navigation-icons {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer__navigation-icons li img{
+    /* background-color: blue; */
+    height: 25px
+}
+
