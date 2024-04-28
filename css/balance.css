@@ -123,3 +123,66 @@ body{
     font-family: "SF-Pro-Text-Bold";
     font-size: 12px;
 }
+
+
+
+
+
+
+/*
+------------------------------
+ESTILOS PARA EL APARTADO MAIN
+------------------------------
+*/
+
+.main {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+
+}
+.main__finacial-management {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+
+.main__finacial-management p{
+    font-family: "SF-Pro-Text-Light";
+    padding: 8px 20px;
+
+    border-radius: 18px;
+}
+.main__finacial-management p:first-child{
+    background-color: var(--color-1);
+    color: var(--color-4)
+}
+
+.main__finacial-management p:nth-child(2){
+    border: solid;
+    border-color: var(--color-2);
+    color: var(--color-2)
+}
+
+.main__finacial-management p:last-child{
+    border: solid;
+    border-color: var(--color-3);
+    color: var(--color-3)
+}
+
+.main__finacial-management-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+.main__finacial-management-image img{
+    width: 450px
+}
