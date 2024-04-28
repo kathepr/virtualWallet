@@ -86,14 +86,6 @@ ESTILOS PARA EL APARTADO HEADER
     height: 18px;
 }
 
-.circle {
-    width: 100px; /* Define el ancho del círculo */
-    height: 100px; /* Define la altura del círculo */
-    border-radius: 50%; /* Establece el radio del borde para hacer el círculo */
-}
-
-
-
 
 
 /*
@@ -124,6 +116,9 @@ ESTILOS PARA EL APARTADO MAIN - INVESTING TIPS
     padding-right: var(--space-layout-padding-right); 
 }
 
+
+
+
 .investing__title {
     /* background-color: rgb(161, 103, 241); */
     font-family: "SF-Pro-Text-Bold";
@@ -139,18 +134,33 @@ ESTILOS PARA EL APARTADO MAIN - INVESTING TIPS
     overflow: hidden;
 }
 
+
 .investing-content__images {
-    /* background-color: #ff0000; */
-    overflow: hidden;
-    padding-right: 20px;
+    position: relative;
+    overflow: hidden; /* Oculta el contenido que sobresale */
+
 }
-
-
 .investing-content__images img{
     height: 120px;
-    width: 130px;
-    transform: translateY(2px)
+    width: 120px;
+    padding-left: 20px;
+    margin-right: 80px;
+    transform: translateY(10px);
+    position: relative;
+    z-index: 1;
 }
+
+
+
+.images__circulo{
+    position: absolute;
+    background-color: var(--pig-color);
+    width: 200px; /* ancho del círculo */
+    height: 200px; /* altura del círculo */
+    border-radius: 50%; /* Establecí el radio del borde para hacer el círculo */
+    transform: translate(-25%, -18%);
+}
+
 
 .investing-content__info {
     /* background-color: yellow; */
