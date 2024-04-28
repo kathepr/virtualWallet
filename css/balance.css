@@ -23,15 +23,16 @@ body{
     
 }
 .header__circulo-grande{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: var(--color-1);
     background-image: url(/storage/image/balance-background-texture.svg);
-    background-size: cover;
+    background-image: cover;
+    background-size: 520px;
     border-radius: 50%; /* Hace que el elemento tenga forma de círculo */
     position: absolute; /* Posicionamiento absoluto me permite que el contenido de .header__logo-menu pueda superponerse al círculo.*/
-    top:-270px;
-    left:-58px
+    top:-390px;
+    left:-100px
 
 }
 
@@ -89,13 +90,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 200px; 
-    height: 200px; 
+    width: 180px; 
+    height: 180px; 
     background-color: var( --color-2);
     border-radius: 50%; /* Para que el div tenga forma de círculo */
     position: absolute;
-    top: 90px; /* Lo ajusta verticalmente */
-    left: 48%; /* Lo posiciona horizontalmente*/
+    top: 75px; /* Lo ajusta verticalmente */
+    left: 49%; /* Lo posiciona horizontalmente*/
     transform: translateX(-50%); /* Para centrar  horizontalmente el círculo pequeño */
     z-index: 2; /* Para que esté sobre el círculo grande */
     color: var(--color-4)
@@ -136,19 +137,28 @@ ESTILOS PARA EL APARTADO MAIN
 */
 
 .main {
-    background-color: pink;
+
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
-    padding-left: var(--space-layout-padding-left);
-    padding-right: var(--space-layout-padding-right);
+    margin-top: 46px;
+    padding-bottom: 10px;
+   
 
 }
+
+
+.financial-management{
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+}
+
 .main__finacial-management {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+
+
 
 }
 
@@ -177,12 +187,127 @@ ESTILOS PARA EL APARTADO MAIN
 }
 
 .main__finacial-management-image {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 .main__finacial-management-image img{
     width: 450px
 }
+
+
+
+
+.main__spending {
+    margin-top: 11px;
+    background-color: var(--pig-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+    height:110px
+}
+.spending__exit {
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.spending__exit img{
+    position: absolute;
+    right: 10px;
+    width:30px;
+}
+
+.spending__content{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+
+}
+.spending__card {
+    position: relative;
+    top: 20px;
+    left:20px;
+
+}
+
+.spending__card img{
+    width:100px;
+
+}
+.spending__text {
+    position: relative;
+    width: 200px;
+    top: 15px;
+    left: 20px;
+}
+
+.spending__text h3{
+    font-family: "SF-Pro-Text-Bold";
+    color:var(--color-1);
+    
+}
+
+.spending__text small{
+    font-family: "SF-Pro-Text-Light";
+    font-size: 11.5px;
+    color:var(--color-1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---------------------------------------------
+ESTILOS PARA EL FOOTER
+---------------------------------------------
+*/
+
+
+
+.footer {
+    background-color: var(--color-1);
+    display: flex;
+    height: 9.5%;
+    width: 100%;
+    bottom: 0;
+    padding-left: var(--space-layout-padding-left);
+    padding-right: var(--space-layout-padding-right);
+    position:absolute;
+
+}
+.footer__navigation-icons {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer__navigation-icons li img{
+    /* background-color: blue; */
+    height: 25px
+}
+
+
+
