@@ -155,23 +155,22 @@ ESTILOS PARA EL APARTADO MAIN
 
 .main__finacial-management {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-
-
-
 }
 
 
 .main__finacial-management p{
     font-family: "SF-Pro-Text-Light";
     padding: 8px 20px;
-
     border-radius: 18px;
 }
 .main__finacial-management p:first-child{
+    border: solid;
     background-color: var(--color-1);
-    color: var(--color-4)
+    color: var(--color-4);
+    padding: 10px 20px
 }
 
 .main__finacial-management p:nth-child(2){
