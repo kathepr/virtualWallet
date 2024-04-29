@@ -369,7 +369,7 @@ ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
     flex-direction: column;
     gap: 15px;
     overflow-y: auto; /* Añade desbordamiento vertical */
-    max-height: 120px; /* Establece una altura máxima para mostrar la barra de desplazamiento */
+    max-height: 140px; /* Establece una altura máxima para mostrar la barra de desplazamiento */
 }
     
 
