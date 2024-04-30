@@ -181,10 +181,10 @@ ESTILOS PARA EL APARTADO MAIN
     padding-left: var(--space-layout-padding-left);
     padding-right: var(--space-layout-padding-right);
     padding-top: var(--space-layout-padding-top);
-    border-radius: 40px 40px 0 0; /* Radios de borde para las esquinas superiores */
-    /* position: absolute;
-    height: 490px;
-    bottom: 0 */
+    border-radius: 40px 40px 0 0;
+    overflow-y: auto; /* Agregar desplazamiento vertical */
+    max-height: calc(100vh - 10%); /* Ajustar la altura máxima para que se ajuste a la ventana del navegador menos el footer */
+
 }
 
 
@@ -379,14 +379,15 @@ ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
     display: flex;
     flex-direction: column;
     /* background-color: red; */
+    padding-bottom: 90px;
 
 }
 .box__transaction-types {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    overflow-y: auto; /* Añade desbordamiento vertical */
-    max-height: 140px; /* Establece una altura máxima para mostrar la barra de desplazamiento */
+    overflow-y: auto; /* Desbordamiento vertical */
+    max-height: 500px; /* Altura máxima para que se pueda mostrar la barra de desplazamiento */
 }
     
 
@@ -458,9 +459,10 @@ ESTILOS PARA EL FOOTER
     bottom: 0;
     padding-left: var(--space-layout-padding-left);
     padding-right: var(--space-layout-padding-right);
-    position:absolute;
-
+    position: fixed; /* Posición fija */
+    bottom: 0; /* Lo fijo en la parte inferior */
 }
+
 .footer__navigation-icons {
     /* background-color: blueviolet; */
     display: flex;
