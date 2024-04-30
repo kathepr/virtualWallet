@@ -235,17 +235,15 @@ ESTILOS PARA EL APARTADO MAIN - MY CARDS
 }
 
 .main__cards .cards:nth-child(even) {
-    background-color: var(--color-5-credit-card-even);
-    background-image: url(/storage/image/background-texture-creditCard-even.svg);
+    background-image: url(/storage/image/background-texture-creditCard-even.png);
 
 }
 
 .cards {
     flex-grow: 0; /* Para evitar que las tarjetas se expandan más allá de su contenido */
     flex-shrink: 0; /* Para evitar que las tarjetas se reduzcan más allá de su contenido */
-   
-    background-color: var(--color-1);
-    background-image: url(/storage/image/background-texture-creditCard.svg);
+
+    background-image: url(/storage/image/background-texture-creditCard.png);
     background-size: cover;
     width: 210px;
     height: 320px;
