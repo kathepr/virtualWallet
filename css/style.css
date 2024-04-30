@@ -16,7 +16,6 @@ ESTILOS PARA EL APARTADO HEADER
 body{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
     background-image: url(/storage/image/background-texture.svg);
 }
 

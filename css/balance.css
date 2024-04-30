@@ -25,14 +25,13 @@ body{
 .header__circulo-grande{
     width: 600px;
     height: 600px;
-    background-color: var(--color-1);
-    background-image: url(/storage/image/balance-background-texture.svg);
+    background-image: url(/storage/image/background-texture.svg);
     background-image: cover;
     background-size: 520px;
     border-radius: 50%; /* Hace que el elemento tenga forma de círculo */
     position: absolute; /* Posicionamiento absoluto me permite que el contenido de .header__logo-menu pueda superponerse al círculo.*/
-    top:-390px;
-    left:-100px
+    top:-388px;
+    left:-98px
 
 }
 
@@ -95,9 +94,9 @@ body{
     background-color: var( --color-2);
     border-radius: 50%; /* Para que el div tenga forma de círculo */
     position: absolute;
-    top: 75px; /* Lo ajusta verticalmente */
-    left: 49%; /* Lo posiciona horizontalmente*/
-    transform: translateX(-50%); /* Para centrar  horizontalmente el círculo pequeño */
+    top: 80px; /* Lo ajusté verticalmente */
+    left: 50%; /* Lo posicioné horizontalmente*/
+    transform: translateX(-50%); /* Para centrar horizontalmente el círculo pequeño */
     z-index: 2; /* Para que esté sobre el círculo grande */
     color: var(--color-4)
 
