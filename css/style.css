@@ -64,7 +64,7 @@ a {
 
 /* Estilos para el nombre de la virtual wallet que acompaña a logotipo de la compañia */
 .logo-menu__logo small{
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Roboto-Bold";
     font-size: 12px;
     color: var(--color-4);
     letter-spacing: 2px
@@ -89,13 +89,13 @@ a {
 
 /* Estilos para el título del mensaje de bienvenida: Saludo al usuario */
 .header__welcome-message h1{
-    font-family: "SF-Pro-Text-Heavy";
+    font-family: "Roboto-Black";
     font-size: 30px;
 }
 
 /* Estilos para el texto del mensaje de bienvenida */
 .header__welcome-message p{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Light";
     font-size: 30px;
 }
 
@@ -113,7 +113,7 @@ a {
 
 /* Estilos para el texto de información financiera: SAVINGS */
 .financialPortafolio__savings small{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Medium";
     font-size: 11px;
 }
 
@@ -125,7 +125,7 @@ a {
 
 /*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de savings*/
 .financialPortafolio__savings p span{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Medium";
     font-size: 13px
 }
 
@@ -140,7 +140,7 @@ a {
 
 /* Estilos para el texto de información financiera: ASSETS */
 .financialPortafolio__assets small{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Medium";
     font-size: 11px;
 }
 
@@ -152,7 +152,7 @@ a {
 
 /*Estilos para el simbolo de pesos $ que acompaña la cantidad de dinero de assets*/
 .financialPortafolio__assets p span{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Medium";
     font-size: 13px;
 }
 
@@ -251,7 +251,7 @@ ESTILOS PARA EL APARTADO MAIN - ACTIVITIES
 
 
 .account__link img{
-    width:38px;
+    width:50px;
     height: 50px;
 
 }
@@ -285,7 +285,7 @@ ESTILOS PARA EL APARTADO MAIN - ACTIVITIES
 
 
 .privacy__link img{
-    width:38px;
+    width:50px;
     height: 50px;
 
 }
@@ -316,11 +316,12 @@ ESTILOS PARA EL APARTADO MAIN - ACTIVITIES
 }
 
 .help__link img{
-    width:38px;
-    height: 50px;
+    width:40px;
+    height: 40px;
 }
 
 .help__link p{
+    padding-top: 10px;
     font-family: "Roboto-Medium";
     font-size: 15px;
 }
@@ -398,11 +399,11 @@ ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
 }
 
 .description__info h4{
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Roboto-Bold";
 }
 
 .description__info small{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Light";
     font-size: 11px;
     
 }
@@ -414,12 +415,12 @@ ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
 }
 
 .transaction-types__price-date h4{
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Roboto-Bold";
 
 }
 
 .transaction-types__price-date small{
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Roboto-Light";
     font-size: 11px;
 
 }
