@@ -2,4 +2,4 @@
 
 Puedes ver el video de Virtual Wallet en el siguiente enlace:
 
-[Virtual Wallet Video](https://www.awesomescreenshot.com/video/27241880?key=8b2527c27fb010433e5a30f8390c9419)
+[Virtual Wallet Video](https://drive.google.com/file/d/1P17qcEzjiFty9vY4Gpjw4gbeWZwZ1qeF/view?usp=drive_link)
