@@ -181,8 +181,8 @@ ESTILOS PARA EL APARTADO MAIN
     padding-right: var(--space-layout-padding-right);
     padding-top: var(--space-layout-padding-top);
     border-radius: 40px 40px 0 0;
-    overflow-y: auto; /* Agregar desplazamiento vertical */
-    max-height: calc(100vh - 10%); /* Ajustar la altura máxima para que se ajuste a la ventana del navegador menos el footer */
+    overflow-y: auto; /* Se agrega desplazamiento vertical */
+    max-height: calc(100vh - 10%); /* Se ajusta la altura máxima para que se ajuste a la ventana del navegador menos el footer */
 
 }
 
@@ -386,7 +386,7 @@ ESTILOS PARA EL APARTADO MAIN - TRANSACTIONS
     flex-direction: column;
     gap: 15px;
     overflow-y: auto; /* Desbordamiento vertical */
-    max-height: 500px; /* Altura máxima para que se pueda mostrar la barra de desplazamiento */
+    max-height: 450px; /* Altura máxima para que se pueda mostrar la barra de desplazamiento */
 }
     
 
