@@ -29,21 +29,21 @@
 
 @font-face {
     font-family: "Roboto-Bold"; /*SF-Pro-Text-Bold*/ /*SF-Pro-Text-Medium*/
-    src: url("/storage/font/Roboto/Roboto-Bold.ttf");
+    src: url("../storage/font/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
     font-family: "Roboto-Black"; /*SF-Pro-Text-Heavy*/ 
-    src: url(/storage/font/Roboto/Roboto-Black.ttf);
+    src: url(../storage/font/Roboto/Roboto-Black.ttf);
 }
 
 @font-face {
     font-family: "Roboto-Light"; /*SF-Pro-Text-Light*/
-    src: url(/storage/font/Roboto/Roboto-Light.ttf);
+    src: url(../storage/font/Roboto/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: "Roboto-Medium";
-    src: url(/storage/font/Roboto/Roboto-Medium.ttf);
+    src: url(../storage/font/Roboto/Roboto-Medium.ttf);
 }
 

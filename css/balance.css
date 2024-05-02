@@ -25,7 +25,7 @@ body{
 .header__circulo-grande{
     width: 600px;
     height: 600px;
-    background-image: url(/storage/image/background-texture.svg);
+    background-image: url(../storage/image/background-texture.svg);
     background-image: cover;
     background-size: 520px;
     border-radius: 50%; /* Hace que el elemento tenga forma de círculo */
